@@ -42,6 +42,10 @@ delay = speed / fps
 if len(sys.argv) < 2:
 	print("Warning: you used default options. To view available arguments, use -h or --help flag.")
 
+if not os.path.exists(args.frame_folder):
+	os.mkdir(args.frame_folder)
+	print(f"Created {args.frame_folder} folder")
+
 print(f"Delay: {delay} seconds")
 
 if delay < 0.2:
@@ -67,14 +71,14 @@ try:
 		raw = r.get_image(0, 0, w, h, X.ZPixmap, 2 ** 32 - 1).data
 		img = Image.frombytes('RGB', (w, h), raw, 'raw', 'BGRX')
 		filename = f'{str(i).rjust(6, "0")}.jpg'
-	if not args.reduce == 1:
-		img = img.resize((int(w // args.reduce), int(h // args.reduce)))
-	td = str(datetime.timedelta(seconds=(i / fps)))
-	td = td[:-3] if '.' in td else td + '.000'
-	img.save(os.path.join(args.frame_folder, filename), quality=args.quality)
-	print(f'[{td}] Saved to {filename}')
-	i += 1
-	sleep(delay)
+		if not args.reduce == 1:
+			img = img.resize((int(w // args.reduce), int(h // args.reduce)))
+		td = str(datetime.timedelta(seconds=(i / fps)))
+		td = td[:-3] if '.' in td else td + '.000'
+		img.save(os.path.join(args.frame_folder, filename), quality=args.quality)
+		print(f'[{td}] Saved to {filename}')
+		i += 1
+		sleep(delay)
 except KeyboardInterrupt:
 	if args.preserve_frames and not ask("\nStitch video"):
 		print("OK, exiting...")
