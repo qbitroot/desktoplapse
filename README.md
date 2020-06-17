@@ -1,4 +1,4 @@
-# desktoplapse
+# 🔴 desktoplapse
 Linux command-line interface tool for recording desktop into a fast-motion `.mp4` video. You can specify many options, such as quality, size, speed, FPS and others.
 
 # Installation
