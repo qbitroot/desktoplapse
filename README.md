@@ -22,7 +22,7 @@ To list all available options, run `python3 desktoplapse.py -h`:
                             JPEG quality from 0 to 100 of captured frames
                             (default: 80)
       -r REDUCE, --reduce REDUCE
-                            image reduce factor (default: 1.0)
+                            image size reduce factor (default: 1.0)
       --frame-folder FRAME_FOLDER
                             path to folder where captured frames are stored
                             (default: cap)
@@ -36,8 +36,8 @@ or
 
 `python3 desktoplapse.py -s 10 -f 20 -o capture.mp4`
 
-If `-o/--output` is not specified, a unix timestamp + `.mp4` will set as output video file name. For example, `1592413634.mp4`
+If `-o`/`--output` is not specified, a unix timestamp + `.mp4` will set as output video file name. For example, `1592413634.mp4`
 
 While capturing a timelapse, many screenshots are made and saved to `--frame-folder` (`cap` by default). Then they get deleted if `--preserve-frames` option is not set. If `--preserve-frames` is set, you can pause recording and continue later.
 
-If you record a really long timelapse (5+ hours), you can reduce image size twice or more. To do this, use `-r N` option, where `N` is size.
+If you record a really long timelapse (5+ hours), you can reduce image size twice or more to save storage space. To do this, use `-r N` option, where `N` is size. Also, you can reduce screenshot JPEG quality by specifying `-q`/`--quality` option. You can read more about JPEG quality factor at https://en.wikipedia.org/wiki/JPEG#Sample_photographs
