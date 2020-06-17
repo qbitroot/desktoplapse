@@ -9,14 +9,14 @@ from Xlib import X, display
 
 parser = argparse.ArgumentParser()
 parser.add_argument('-f', "--fps", type=int, default=10,
-					help="amount of frames captured per one second (default: %(default)s)")
+				help="amount of frames captured per one second (default: %(default)s)")
 parser.add_argument('-s', "--speed", type=float, default=5.0, help="speed up factor (default: %(default)s)")
 parser.add_argument('-o', "--output", help="location of output video file, default is TIMESTAMP.mp4")
 parser.add_argument('-q', "--quality", type=int, default=80,
-					help="JPEG quality from 0 to 100 of captured frames (default: %(default)s)")
-parser.add_argument('-r', "--reduce", type=float, default=1.0, help="image size reduce factor (default: %(default)s)")
+				help="JPEG quality from 0 to 100 of captured frames (default: %(default)s)")
+parser.add_argument('-r', "--reduce", type=float, default=1.0, help="screenshot size reduce factor (default: %(default)s)")
 parser.add_argument("--frame-folder", default='cap',
-					help="path to folder where captured frames are stored (default: %(default)s)")
+				help="path to folder where captured frames are stored (default: %(default)s)")
 parser.add_argument("--preserve-frames", action='store_true', help="do not delete captured frames")
 args = parser.parse_args()
 
