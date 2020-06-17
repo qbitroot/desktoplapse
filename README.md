@@ -1,10 +1,10 @@
 # 🔴 desktoplapse
 Linux command-line interface tool for recording desktop into a fast-motion `.mp4` video. You can specify many options, such as quality, size, speed, FPS and others.
 
-# Installation
+## Installation
 Firstly, you need Python 3 and `python3-pip`. Then, install ffmpeg (`sudo apt install ffmpeg` for Debian-based GNU/Linux distribution). My script uses ffmpeg for stitching captured frames into one video. Then clone this repository and go to its folder: `git clone https://github.com/gangural/desktoplapse; cd desktoplapse`. Install Python dependencies from requirements file: `sudo pip3 install -r requirements.txt`. That's it!
 
-# Usage
+## Usage
 To list all available options, run `python3 desktoplapse.py -h`:
 
     usage: desktoplapse.py [-h] [-f FPS] [-s SPEED] [-o OUTPUT] [-q QUALITY] [-r REDUCE]
@@ -42,6 +42,6 @@ While capturing a timelapse, many screenshots are made and saved to `--frame-fol
 
 If you record a really long timelapse (5+ hours), you can reduce image size twice or more to save storage space. To do this, use `-r N` option, where `N` is size. Also, you can reduce screenshot JPEG quality by specifying `-q`/`--quality` option. You can read more about JPEG quality factor at https://en.wikipedia.org/wiki/JPEG#Sample_photographs
 
-# Objective
+## Objective
 
 This program can help you monitor your productivity, improve time-management and capture fast-motion videos of your work.
