@@ -41,3 +41,7 @@ If `-o`/`--output` is not specified, a unix timestamp + `.mp4` will set as outpu
 While capturing a timelapse, many screenshots are made and saved to `--frame-folder` (`cap` by default). Then they get deleted if `--preserve-frames` option is not set. If `--preserve-frames` is set, you can pause recording and continue later.
 
 If you record a really long timelapse (5+ hours), you can reduce image size twice or more to save storage space. To do this, use `-r N` option, where `N` is size. Also, you can reduce screenshot JPEG quality by specifying `-q`/`--quality` option. You can read more about JPEG quality factor at https://en.wikipedia.org/wiki/JPEG#Sample_photographs
+
+# Objective
+
+This program can help you monitor your productivity, improve time-management and capture fast-motion videos of your work.
