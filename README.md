@@ -40,4 +40,4 @@ If `-o/--output` is not specified, a unix timestamp + `.mp4` will set as output 
 
 While capturing a timelapse, many screenshots are made and saved to `--frame-folder` (`cap` by default). Then they get deleted if `--preserve-frames` option is not set. If `--preserve-frames` is set, you can pause recording and continue later.
 
-If you record a really long timelapse (5+ hours), you can reduce image size twice. To do this, use `-r 2` option.
+If you record a really long timelapse (5+ hours), you can reduce image size twice or more. To do this, use `-r N` option, where `N` is size.
