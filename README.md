@@ -1,5 +1,5 @@
 # desktoplapse
-Linux command-line interface tool for recording desktop into a fast-motion `.mp4` video.
+Linux command-line interface tool for recording desktop into a fast-motion `.mp4` video. You can specify many options, such as quality, size, speed, FPS and others.
 
 # Installation
 Firstly, you need Python 3 and `python3-pip`. Then, install ffmpeg (`sudo apt install ffmpeg` for Debian-based GNU/Linux distribution). My script uses ffmpeg for stitching captured frames into one video. Then clone this repository and go to its folder: `git clone https://github.com/gangural/desktoplapse; cd desktoplapse`. Install Python dependencies from requirements file: `sudo pip3 install -r requirements.txt`. That's it!
