@@ -68,7 +68,7 @@ try:
 		img = Image.frombytes('RGB', (w, h), raw, 'raw', 'BGRX')
 		filename = f'{str(i).rjust(6, "0")}.jpg'
 	if not args.reduce == 1:
-  		img = img.resize((int(w // args.reduce), int(h // args.reduce)))
+		img = img.resize((int(w // args.reduce), int(h // args.reduce)))
 		td = str(datetime.timedelta(seconds=(i / fps)))
 		td = td[:-3] if '.' in td else td + '.000'
 		img.save(os.path.join(args.frame_folder, filename), quality=args.quality)
