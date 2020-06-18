@@ -22,7 +22,7 @@ To list all available options, run `python3 desktoplapse.py -h`:
                             JPEG quality from 0 to 100 of captured frames
                             (default: 80)
       -r REDUCE, --reduce REDUCE
-                            image size scale down factor (default: 1.0)
+                            screenshot size scale down factor (default: 1.0)
       --frame-folder FRAME_FOLDER
                             path to folder where captured frames are stored
                             (default: cap)
