@@ -2,7 +2,7 @@
 Linux command line tool for desktop recording into a fast-motion `.mp4` video. Options can be set, such as quality, size, speed, FPS and others. 
 
 ## Installation
-Python 3 and `python3-pip` are required. Then, install ffmpeg (`sudo apt install ffmpeg` for Debian-based GNU/Linux distribution). FFmpeg is used for stitching captured frames into one video. Then clone this repository and go to its directory: `git clone https://github.com/gangural/desktoplapse; cd desktoplapse`. Install Python dependencies from requirements file: `sudo pip3 install -r requirements.txt`.
+Python 3 and `python3-pip` are required. Then, install ffmpeg (`sudo apt install ffmpeg` for Debian-based GNU/Linux distribution). FFmpeg is used for stitching captured frames into one video. Then clone this repository and go to its directory: `git clone https://github.com/qbitroot/desktoplapse; cd desktoplapse`. Install Python dependencies from requirements file: `sudo pip3 install -r requirements.txt`.
 
 ## Usage
 To list all available options, run `python3 desktoplapse.py -h`:
